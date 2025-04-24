@@ -13,7 +13,7 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://yourvibes.duckdns.org:3000"],
+    origin: ["http://localhost:3000", "https://yourvibes.duckdns.org:3000"],
     methods: ["GET", "POST"],
   },
 });
